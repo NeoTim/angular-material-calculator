@@ -23,16 +23,48 @@
 
   </head>
 
-  <body ng-app="calculatorApp" layout="row" ng-cloak >
+  <body ng-app="calcApp" ng-cloak class="md-primary" ng-controller="CalcController as calc">
+
+    <section class="calc-container md-whiteframe-z3" layout="column">
+      <div layout="column">
+        <div flex class="layout-result">
+          <h1>{{calc.result}}</h1>
+        </div>
+        <div flex layout="row">
+          <div flex="75" layout="column">
+            <div flex class="layout-input">
+              <h2>{{calc.result}}</h2>
+            </div>
+            <div flex class="layout-numbers" layout-align="center center">
+              <numbers-row ng-repeat="row in calc.numbersRow"></numbers-row>
+            </div>
+          </div>
+          <div flex class="layout-operators" layout="column">
+            <calc-operator ng-repeat="operator in calc.operators" flex class="operator"></calc-operator>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="../node_modules/angular/angular.js"></script>
     <script src="../node_modules/angular-animate/angular-animate.js"></script>
     <script src="../node_modules/angular-aria/angular-aria.js"></script>
     <script type="text/javascript" src="../node_modules/angular-material/angular-material.js"></script>
 
+    <script src="./src/calc/Calc.js"></script>
+    <script src="./src/calc/CalcController.js"></script>
+
     <script type="text/javascript">
 
-          angular.module('calculatorApp', ['ngMaterial']);
+          angular
+            .module('calcApp', ['ngMaterial','calc'])
+            .config(function($mdThemingProvider){
+
+                      $mdThemingProvider.theme('default')
+                          .primaryPalette('blue')
+                          .accentPalette('yellow');
+
+              });
 
     </script>
 
