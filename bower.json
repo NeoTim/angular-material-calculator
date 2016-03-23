@@ -3,7 +3,7 @@
   "authors": [
     "Mikolaj Dobrucki <mikolaj.dobrucki@gmail.com>"
   ],
-  "description": "A simple calculator created in Angular Material.",
+  "description": "A simple calculator created in Angular Material",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
@@ -21,7 +21,4 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "angular": "1.5.0"
-  }
 }

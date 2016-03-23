@@ -1,0 +1,30 @@
+{
+  "name": "angular-material-calculator",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A simple calculator created in Angular Material",
+  "repository": " ",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/material/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-aria": "^1.4.9",
+    "angular-material": "^1.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.9",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "live-server": "^0.9.1"
+  },
+  "scripts": {
+    "prestart": "npm update",
+    "tests": "karma start ./test/karma.conf.js"
+  }
+}

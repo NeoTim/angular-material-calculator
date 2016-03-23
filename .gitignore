@@ -6,3 +6,10 @@
 .sass-cache/*
 *.css.map
 *.css
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.idea
+app/jspm_packages
