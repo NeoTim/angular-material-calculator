@@ -28,7 +28,7 @@ h2 {
 .layout-input {
   background-color: white;
   position: relative;
-  .md-button {
+  .md-fab {
     position: absolute;
     font-size: 48px;
     font-weight: 200;
@@ -38,6 +38,21 @@ h2 {
     height: 116px;
     span {
       opacity: .4;
+    }
+  }
+  .clear-all {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    span {
+      background-color: $blue-grey-200;
+      display: flex;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 23px;
+      line-height: 20px;
     }
   }
   .super-ink-wrapper {
