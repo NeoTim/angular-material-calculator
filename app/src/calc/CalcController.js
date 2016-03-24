@@ -2,12 +2,13 @@
 
   angular
        .module('calc')
-       .controller('CalcController', function() {
+       .controller('CalcController', function($scope,$timeout) {
          this.result = 0;
          this.input = 0;
          this.numbers = [",","0","←","1","2","3","4","5","6","7","8","9"];
          this.numbersRow = [4,3,2,1,0];
          this.operators = ["÷","×","-","+"];
+         this.trigger;
 
          // take the raw input from the input space
          // and create a final result visible in the top field
@@ -89,6 +90,27 @@
              this.input = this.input.substring(0,this.input.length-1)+x;
            }
          };
+
+        //  this.trigger = "trigger";
+        //  this.input = this.result;
+
+         // when the equal sign is pressed
+
+         x = this;
+         $scope.inputExecute = function() {
+             x.trigger = "trigger";
+             $timeout(function() {
+                x.input = x.result;
+             }, 500);
+             $timeout(function() {
+                x.trigger = "fade";
+             }, 600);
+             $timeout(function() {
+                x.trigger = "back";
+             }, 1400);
+          }
+
        });
+
 
 })();

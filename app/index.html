@@ -32,9 +32,12 @@
         </div>
         <div flex class="layout-input">
           <h2>{{calc.input}}</h2>
-          <md-button class="md-fab md-accent" aria-label="Execute">
+          <md-button class="md-fab md-accent" aria-label="Execute" ng-click="inputExecute()">
               =
           </md-button>
+          <div class="super-ink-wrapper">
+            <div class="super-ink" ng-class="calc.trigger"></div>
+          </div>
         </div>
         <div flex layout="row">
           <div flex="75" layout="column">
