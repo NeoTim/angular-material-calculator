@@ -1,0 +1,57 @@
+body {
+  background-color: #3F51B5;
+  padding: 50px;
+}
+section {
+  margin: auto;
+  max-width: 400px;
+}
+h1,h2 {
+  margin: 0;
+  font-weight: 300;
+}
+h1 {
+  font-size: 72px;
+  padding: 25px;
+}
+h2 {
+  height: 40px;
+  margin: 25px;
+  font-size: 32px;
+}
+.layout-result {
+  background-color: #ECEFF1;
+}
+.layout-input {
+  background-color: white;
+  position: relative;
+  .md-button {
+    position: absolute;
+    font-size: 48px;
+    font-weight: 200;
+    top: -15px;
+    right: -15px;
+    width: 116px;
+    height: 116px;
+    span {
+      opacity: .4;
+    }
+  }
+}
+.layout-numbers {
+  background-color: #263238;
+}
+.layout-operators {
+  background-color: #37474F;
+}
+.md-button.md-icon-button {
+  font-size: 32px;
+  width: 90px;
+  height: 90px;
+  margin: 0;
+  color: white;
+  font-weight: 300;
+}
+.number,.operator {
+  text-align: center;
+}

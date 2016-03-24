@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400'>
     <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css"/>
     <link rel="stylesheet" href="assets/style.css"/>
 
@@ -62,12 +62,10 @@
           angular
             .module('calcApp', ['ngMaterial','calc'])
             .config(function($mdThemingProvider){
-
-                      $mdThemingProvider.theme('default')
-                          .primaryPalette('indigo')
-                          .accentPalette('teal');
-
-              });
+                $mdThemingProvider.theme('default')
+                  .primaryPalette('indigo')
+                  .accentPalette('teal');
+                });
 
     </script>
 
