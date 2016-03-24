@@ -1,9 +1,10 @@
 body {
   background-color: #3F51B5;
-  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section {
-  margin: auto;
   max-width: 400px;
 }
 h1,h2 {
